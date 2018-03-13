@@ -24,11 +24,12 @@ $navbar-default-bg: black;
 .jumbotron {
   background-image: asset-url('sunset.jpeg');
   background-size: cover;
+  color: invert($navbar-default-bg);
   height: 470px;
 }
 
 .jumbotron h1 {
-  color: black;
+  text-shadow: 2px 2px black;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
