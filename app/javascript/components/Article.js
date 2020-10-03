@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 
 import Timestamp from "react-timestamp"
 
-import TimeAgo from 'react-timeago'
-
 class Article extends React.Component {
   render () {
     return (
@@ -30,12 +28,6 @@ class Article extends React.Component {
   componentDidMount(){
     var self = this;
     setInterval(function(){self.forceUpdate()}, 1000);
-  }
-  componentWillUnmount(){
-    if (this._timer){
-      clearInterval(this._timer);
-      this._timer = null;
-    }
   }
 }
 
